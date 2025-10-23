@@ -13,6 +13,10 @@ object Build : BuildType({
         }
     }
 
+    params {
+        param("test", "!awssm://test")
+    }
+
     steps {
         script {
             name = "Test"

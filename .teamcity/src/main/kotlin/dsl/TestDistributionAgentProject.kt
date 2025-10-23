@@ -22,7 +22,7 @@ object Build : BuildType({
         script {
             name = "Test"
             scriptContent = """
-                echo "!awssm://test"
+                echo "%another%"
             """.trimIndent()
         }
     }

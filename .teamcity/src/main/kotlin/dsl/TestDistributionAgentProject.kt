@@ -15,6 +15,7 @@ object Build : BuildType({
 
     params {
         param("test", "!awssm://test")
+        param("another", "%test%")
     }
 
     steps {

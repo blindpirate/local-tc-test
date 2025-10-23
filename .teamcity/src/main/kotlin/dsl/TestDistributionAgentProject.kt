@@ -15,14 +15,14 @@ object Build : BuildType({
 
     params {
         param("test", "!awssm://test")
-        param("another", "%test%")
+        param("env.another", "%test%")
     }
 
     steps {
         script {
             name = "Test"
             scriptContent = """
-                echo "%another%"
+                echo "${'$'}another"
             """.trimIndent()
         }
     }

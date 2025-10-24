@@ -22,7 +22,7 @@ object Build : BuildType({
         script {
             name = "Test"
             scriptContent = """
-                echo -n "${'$'}another" | base64
+                echo -n "${'$'}another" > result.txt
             """.trimIndent()
         }
     }

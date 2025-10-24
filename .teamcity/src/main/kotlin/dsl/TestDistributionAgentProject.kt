@@ -14,7 +14,7 @@ object Build : BuildType({
     }
 
     params {
-        param("test", "!awssm://test")
+        param("test", "!awssm://arn:aws:secretsmanager:eu-central-1:897729135250:secret:TestSecret-WKIj2z")
         param("env.another", "%test%")
     }
 
